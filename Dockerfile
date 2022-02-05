@@ -18,6 +18,7 @@ WORKDIR /app
 # Copy to working directory
 COPY . .
 
+# Launch browser with browser.launch({executablePath: 'google-chrome-stable'})
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
 # Project dependencies
