@@ -26,7 +26,7 @@ void (async function run() {
     await page.screenshot({ path: "screenshot.png" });
     console.info("Puppeteer run completed successfully...");
   } catch (err) {
-    console.info("Puppeteer run failed on error:", err.message);
+    console.warn("Puppeteer run failed on error:", err.message);
   }
 
   await browser.close();
