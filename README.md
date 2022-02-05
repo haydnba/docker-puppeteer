@@ -18,6 +18,5 @@ chmod u+x ./bin/run.sh
 
 Run puppeteer in docker without the dangerous `--no-sandbox` flag.
 
-### @TODO
-
-Skip the puppeteer crhomium download...
+https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#running-puppeteer-in-docker
+https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#setting-up-chrome-linux-sandbox
