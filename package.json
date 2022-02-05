@@ -1,0 +1,23 @@
+{
+  "name": "simple-docker-puppeteer",
+  "version": "1.0.0",
+  "description": "Safely run puppeteer in docker",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haydnba/docker-puppeteer.git"
+  },
+  "keywords": [],
+  "author": "Haydn Appleby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haydnba/docker-puppeteer/issues"
+  },
+  "homepage": "https://github.com/haydnba/docker-puppeteer#readme",
+  "dependencies": {
+    "puppeteer": "^13.1.3"
+  }
+}
