@@ -1,4 +1,4 @@
-## Safe run puppeteer in docker
+## Run puppeteer in docker safely
 
 ### Run app locally
 
@@ -17,3 +17,7 @@ chmod u+x ./bin/run.sh
 ### Rationale
 
 Run puppeteer in docker without the dangerous `--no-sandbox` flag.
+
+### @TODO
+
+Skip the puppeteer crhomium download...
