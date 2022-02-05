@@ -1,33 +1,25 @@
 import puppeteer from "puppeteer";
 
 void (async function run() {
-  // enable config for debugging
+  // enable config for containerless debugging
   const browser = await puppeteer.launch({
-    headless: false,
-    devtools: true,
-    defaultViewport: null,
-    args: ["--start-maximised"],
-    slowMo: 250,
+    // headless: false,
+    // devtools: true,
+    // defaultViewport: null,
+    // args: ["--start-maximised"],
+    // slowMo: 250,
   });
 
+  console.info("Puppeteer run starting...");
   const page = await browser.newPage();
 
-  await page.goto("https://github.com/haydnba/docker-puppeteer");
-
-  await Promise.all([
-    page.waitForNavigation(),
-    page.$eval('A[id="issues-tab"]', (el) => el.click()),
-  ]);
-
-  await Promise.all([
-    page.waitForNavigation(),
-    page.$eval('A[selected_link="repo_issues"]', (el) => el.click()),
-  ]);
-
-  await Promise.all([
-    page.waitForNavigation(),
-    page.$eval('A[title="Extra attention is needed"]', (el) => el.click()),
-  ]);
+  try {
+    await page.goto("https://github.com/haydnba/docker-puppeteer");
+    await page.screenshot({ path: "screenshot.png" });
+    console.info("Puppeteer run completed successfully...");
+  } catch (err) {
+    console.info("Puppeteer run failed on error:", err.message);
+  }
 
   await browser.close();
 })();
