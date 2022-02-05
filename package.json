@@ -1,7 +1,7 @@
 {
-  "name": "simple-docker-puppeteer",
+  "name": "docker-puppeteer",
   "version": "1.0.0",
-  "description": "Safely run puppeteer in docker",
+  "description": "Run puppeteer in docker",
   "type": "module",
   "scripts": {
     "start": "node src/index.js"
