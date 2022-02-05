@@ -18,6 +18,8 @@ WORKDIR /app
 # Copy to working directory
 COPY . .
 
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+
 # Project dependencies
 RUN npm install
 
