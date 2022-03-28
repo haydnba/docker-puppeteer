@@ -1,4 +1,4 @@
-## Run puppeteer in docker
+## Secure headful docker puppeteer
 
 Run containerised puppeteer chrome as securely as possible (e.g. for testing
 untrusted domains), plus enable headful execution with Xvfb frame buffer.
