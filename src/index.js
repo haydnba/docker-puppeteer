@@ -7,6 +7,7 @@ void (async function run() {
     ? {
         /** Dockerised execution */
         executablePath: "google-chrome-stable",
+        headless: false,
       }
     : {
         /** Enabled for local debugging */
