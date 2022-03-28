@@ -6,10 +6,9 @@ untrusted domains), plus enable headful execution with Xvfb frame buffer.
 ### Context
 
 Official puppeteer documentation "strongly discourages" the very common use of
-`--no-sandbox` flag with dockerised puppeteer (chrome) on security grounds (on
-untrusted sites especially) yet appears to recommend creating a non-privileged
-user and passing the equally suspect `--cap-add=SYS_ADMIN` flag to `docker run`
-command.
+`--no-sandbox` flag with dockerised puppeteer on security grounds, yet appears
+to recommend creating a non-privileged user and passing the equally suspect
+`--cap-add=SYS_ADMIN` flag to `docker run` command.
 
 Generally the best option appears to be to use a custom "seccomp" profile (see
 [here](https://docs.docker.com/engine/security/seccomp/)) - this is the pattern
